@@ -1,0 +1,909 @@
+﻿<Page
+    x:Class="MP.Application.Implementation.Views.MediaView"
+
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    mc:Ignorable="d" Height="1080" Width="1920">
+    <Page.Resources>
+
+
+    </Page.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush
+            
+            Stretch="UniformToFill" ImageSource="Images/Background.png"
+            ></ImageBrush>
+        </Grid.Background>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>-->
+
+        <!--   <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Mobile">
+                    <VisualState.Setters>
+                        <Setter Target="background.(FrameworkElement.Height)" Value="995.447" />
+                        <Setter Target="background.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>-223.274,-30.057,-243.273,-325.39</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="background.(FrameworkElement.Width)" Value="826.547" />
+                        <Setter Target="background.(UIElement.RenderTransform).(CompositeTransform.Rotation)"
+                                Value="89.967" />
+                        <Setter Target="background.(UIElement.UseLayoutRounding)" Value="False" />
+                        <Setter Target="Manualctrl.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,10,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Glass.(FrameworkElement.Width)" Value="1301.646" />
+                        <Setter Target="Glass.(FrameworkElement.Height)" Value="1641.38" />
+                        <Setter Target="Glass.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>-189.823,-192.19,-751.823,-809.19</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Glass.(UIElement.RenderTransform).(CompositeTransform.Rotation)"
+                                Value="-14.944" />
+                        <Setter Target="Glass.(UIElement.UseLayoutRounding)" Value="False" />
+                        <Setter Target="Album_art.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>82,10,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Album_art.(FrameworkElement.Width)" Value="180" />
+                        <Setter Target="Album_art.(FrameworkElement.Height)" Value="178" />
+                        <Setter Target="Processing.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>310,10,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Slider.(FrameworkElement.Width)" Value="340" />
+                        <Setter Target="Slider.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,301,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeCount.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,341,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeLeft.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>314,345,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Play.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>154,366,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Forwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>264,366,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Bckwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>38,366,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ArtistName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,193,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ArtistName.(FrameworkElement.Width)" Value="360" />
+                        <Setter Target="TrackName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,251,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TrackName.(FrameworkElement.Width)" Value="360" />
+                        <Setter Target="Settings.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,435,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Settings.(FrameworkElement.Width)" Value="36" />
+                        <Setter Target="Settings.(FrameworkElement.Height)" Value="50" />
+                        <Setter Target="Playlists.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>62,442,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Playlists.(FrameworkElement.HorizontalAlignment)" Value="Left" />
+                        <Setter Target="Playlists.(FrameworkElement.Width)" Value="40" />
+                        <Setter Target="Playlists.(FrameworkElement.Height)" Value="37" />
+                        <Setter Target="Repepat.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>289,448,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Repepat.(FrameworkElement.Width)" Value="25" />
+                        <Setter Target="Repepat.(FrameworkElement.Height)" Value="24" />
+                        <Setter Target="Shuffle.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>319,448,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Shuffle.(FrameworkElement.Width)" Value="31" />
+                        <Setter Target="Shuffle.(FrameworkElement.Height)" Value="24" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>111,442,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Height)" Value="37" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Width)" Value="47" />
+                        <Setter Target="SongList.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,490,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="SongList.(FrameworkElement.Width)" Value="360" />
+                        <Setter Target="SongList.(FrameworkElement.Height)" Value="150" />
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,448,1727,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Height)" Value="37" />
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Width)" Value="35" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>187,438,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Width)" Value="55" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Height)" Value="50" />
+                        <Setter Target="Favorite.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>382,251,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Favorite.(FrameworkElement.HorizontalAlignment)" Value="Left" />
+                        <Setter Target="Favorite.(FrameworkElement.Width)" Value="49" />
+                        <Setter Target="Favorite.(FrameworkElement.Height)" Value="52" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="320" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Computer">
+                    <VisualState.Setters>
+                        <Setter Target="Glass.(FrameworkElement.Width)" Value="2031" />
+                        <Setter Target="Glass.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>177,-332,-928,-985</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Slider.(FrameworkElement.Width)" Value="506" />
+                        <Setter Target="Slider.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>335,505,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Media.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>587,140,0,579</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Bckwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>374,578,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Play.(FrameworkElement.Width)" Value="51" />
+                        <Setter Target="Play.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>580,578,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Forwrd.(FrameworkElement.Width)" Value="49" />
+                        <Setter Target="Forwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>769,578,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Shuffle.(FrameworkElement.Width)" Value="50" />
+                        <Setter Target="Shuffle.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>910,554,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Repepat.(FrameworkElement.Width)" Value="51" />
+                        <Setter Target="Repepat.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>268,554,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Manualctrl.(FrameworkElement.Width)" Value="40" />
+                        <Setter Target="Manualctrl.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>97,11,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Processing.(FrameworkElement.Width)" Value="59" />
+                        <Setter Target="Processing.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>177,11,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Settings.(FrameworkElement.Width)" Value="50" />
+                        <Setter Target="Settings.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>39,660,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Playlists.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>39,595,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>104,660,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TrackName.(FrameworkElement.Width)" Value="663" />
+                        <Setter Target="TrackName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>297,438,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ArtistName.(FrameworkElement.Width)" Value="663" />
+                        <Setter Target="ArtistName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>297,379,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Album_art.(FrameworkElement.Width)" Value="373" />
+                        <Setter Target="Album_art.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>405,88,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeCount.(FrameworkElement.Width)" Value="36" />
+                        <Setter Target="TimeCount.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>268,512,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeLeft.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>870,512,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="SongList.(FrameworkElement.Width)" Value="293" />
+                        <Setter Target="SongList.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>987,68,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Glass.(FrameworkElement.Height)" Value="2037" />
+                        <Setter Target="Slider.(FrameworkElement.Height)" Value="41" />
+                        <Setter Target="Media.(FrameworkElement.HorizontalAlignment)" Value="Left" />
+                        <Setter Target="Bckwrd.(FrameworkElement.Width)" Value="51" />
+                        <Setter Target="Bckwrd.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="Play.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="Forwrd.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="Shuffle.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="Repepat.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="Manualctrl.(FrameworkElement.Height)" Value="37" />
+                        <Setter Target="Processing.(FrameworkElement.Height)" Value="45" />
+                        <Setter Target="Settings.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="Playlists.(FrameworkElement.Width)" Value="49" />
+                        <Setter Target="Playlists.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Width)" Value="49" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Height)" Value="46" />
+                        <Setter Target="TrackName.(FrameworkElement.Height)" Value="48" />
+                        <Setter Target="ArtistName.(FrameworkElement.Height)" Value="54" />
+                        <Setter Target="Album_art.(FrameworkElement.Height)" Value="345" />
+                        <Setter Target="TimeCount.(FrameworkElement.Height)" Value="17" />
+                        <Setter Target="TimeLeft.(FrameworkElement.Width)" Value="36" />
+                        <Setter Target="TimeLeft.(FrameworkElement.Height)" Value="17" />
+                        <Setter Target="SongList.(FrameworkElement.Height)" Value="652" />
+                        <Setter Target="Media.(FrameworkElement.Width)" Value="2" />
+                        <Setter Target="Media.(FrameworkElement.Height)" Value="NaN" />
+                        <Setter Target="PreviewControl.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-2,-11</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="background.(FrameworkElement.Width)" Value="1282" />
+                        <Setter Target="background.(FrameworkElement.Height)" Value="807" />
+                        <Setter Target="background.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-2,-87</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Favorite.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>580,646,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Favorite.(FrameworkElement.HorizontalAlignment)" Value="Left" />
+                        <Setter Target="Favorite.(FrameworkElement.Width)" Value="68" />
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,522,1192,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Width)" Value="54" />
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Height)" Value="60" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>167,660,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Width)" Value="51" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Height)" Value="56" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="960" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1440" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="background.(FrameworkElement.Width)" Value="1544" />
+                        <Setter Target="background.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-104,-219</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="PreviewControl.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-195,-219</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Glass.(FrameworkElement.Width)" Value="2282" />
+                        <Setter Target="Glass.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>199,-344,-1041,-1195</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Slider.(FrameworkElement.Width)" Value="568" />
+                        <Setter Target="Slider.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>375,686,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Media.(FrameworkElement.HorizontalAlignment)" Value="Right" />
+                        <Setter Target="Media.(FrameworkElement.VerticalAlignment)" Value="Bottom" />
+                        <Setter Target="Media.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,621,370</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Bckwrd.(FrameworkElement.Width)" Value="57" />
+                        <Setter Target="Bckwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>419,784,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Play.(FrameworkElement.Width)" Value="57" />
+                        <Setter Target="Play.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>650,784,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Forwrd.(FrameworkElement.Width)" Value="56" />
+                        <Setter Target="Forwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>862,784,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Shuffle.(FrameworkElement.Width)" Value="57" />
+                        <Setter Target="Shuffle.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1019,750,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Repepat.(FrameworkElement.Width)" Value="57" />
+                        <Setter Target="Repepat.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>300,750,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Manualctrl.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>108,36,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Processing.(FrameworkElement.Width)" Value="45" />
+                        <Setter Target="Processing.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>209,36,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Settings.(FrameworkElement.Width)" Value="57" />
+                        <Setter Target="Settings.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>43,890,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Playlists.(FrameworkElement.Width)" Value="56" />
+                        <Setter Target="Playlists.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>44,824,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Width)" Value="56" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>124,890,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TrackName.(FrameworkElement.Width)" Value="744" />
+                        <Setter Target="TrackName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>332,598,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ArtistName.(FrameworkElement.Width)" Value="744" />
+                        <Setter Target="ArtistName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>332,521,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Album_art.(FrameworkElement.Width)" Value="419" />
+                        <Setter Target="Album_art.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>499,60,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeCount.(FrameworkElement.Width)" Value="40" />
+                        <Setter Target="TimeCount.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>300,696,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeLeft.(FrameworkElement.Width)" Value="41" />
+                        <Setter Target="TimeLeft.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>975,696,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="SongList.(FrameworkElement.Width)" Value="333" />
+                        <Setter Target="SongList.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1211,126,-104,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="background.(FrameworkElement.Height)" Value="1179" />
+                        <Setter Target="Glass.(FrameworkElement.Height)" Value="2499" />
+                        <Setter Target="Slider.(FrameworkElement.Height)" Value="55" />
+                        <Setter Target="Bckwrd.(FrameworkElement.Height)" Value="60" />
+                        <Setter Target="Play.(FrameworkElement.Height)" Value="60" />
+                        <Setter Target="Forwrd.(FrameworkElement.Height)" Value="60" />
+                        <Setter Target="Shuffle.(FrameworkElement.Height)" Value="62" />
+                        <Setter Target="Repepat.(FrameworkElement.Height)" Value="62" />
+                        <Setter Target="Manualctrl.(FrameworkElement.Width)" Value="46" />
+                        <Setter Target="Manualctrl.(FrameworkElement.Height)" Value="49" />
+                        <Setter Target="Processing.(FrameworkElement.Height)" Value="49" />
+                        <Setter Target="Settings.(FrameworkElement.Height)" Value="61" />
+                        <Setter Target="Playlists.(FrameworkElement.Height)" Value="61" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Height)" Value="61" />
+                        <Setter Target="TrackName.(FrameworkElement.Height)" Value="64" />
+                        <Setter Target="ArtistName.(FrameworkElement.Height)" Value="71" />
+                        <Setter Target="Album_art.(FrameworkElement.Height)" Value="455" />
+                        <Setter Target="TimeCount.(FrameworkElement.Height)" Value="23" />
+                        <Setter Target="TimeLeft.(FrameworkElement.Height)" Value="23" />
+                        <Setter Target="SongList.(FrameworkElement.Height)" Value="834" />
+                        <Setter Target="Play.(FrameworkElement.HorizontalAlignment)" Value="Left" />
+                        <Setter Target="Media.(FrameworkElement.Width)" Value="2" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>185,880,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Favorite.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>645,849,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Favorite.(FrameworkElement.HorizontalAlignment)" Value="Left" />
+                        <Setter Target="Favorite.(FrameworkElement.Width)" Value="68" />
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,750,1340,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Height)" Value="62" />
+                        <Setter Target="LoadFavPlaylist.(FrameworkElement.Width)" Value="57" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Width)" Value="69" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Height)" Value="80" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Monitor">
+                    <VisualState.Setters>
+                        <Setter Target="background.(FrameworkElement.Width)" Value="2195" />
+                        <Setter Target="background.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-275,-126</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="background.(FrameworkElement.Height)" Value="1206" />
+                        <Setter Target="Processing.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1693,36,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="SongList.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1494,117,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="SongList.(FrameworkElement.Height)" Value="963" />
+                        <Setter Target="Glass.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>-80,-131,-687,-1615</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Glass.(FrameworkElement.Width)" Value="2687" />
+                        <Setter Target="Glass.(FrameworkElement.Height)" Value="2826" />
+                        <Setter Target="Glass.(UIElement.RenderTransform).(CompositeTransform.Rotation)" Value="12.692" />
+                        <Setter Target="Glass.(UIElement.UseLayoutRounding)" Value="False" />
+                        <Setter Target="Slider.(FrameworkElement.HorizontalAlignment)" Value="Stretch" />
+                        <Setter Target="Slider.(FrameworkElement.Width)" Value="NaN" />
+                        <Setter Target="Slider.(FrameworkElement.Height)" Value="62" />
+                        <Setter Target="Slider.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>467,776,746,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Media.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,303,277</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Bckwrd.(FrameworkElement.Width)" Value="71" />
+                        <Setter Target="Bckwrd.(FrameworkElement.Height)" Value="68" />
+                        <Setter Target="Bckwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>522,887,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Play.(FrameworkElement.Width)" Value="71" />
+                        <Setter Target="Play.(FrameworkElement.Height)" Value="68" />
+                        <Setter Target="Play.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>809,887,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Forwrd.(FrameworkElement.HorizontalAlignment)" Value="Right" />
+                        <Setter Target="Forwrd.(FrameworkElement.Width)" Value="70" />
+                        <Setter Target="Forwrd.(FrameworkElement.Height)" Value="68" />
+                        <Setter Target="Forwrd.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,887,777,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Shuffle.(FrameworkElement.Width)" Value="71" />
+                        <Setter Target="Shuffle.(FrameworkElement.Height)" Value="71" />
+                        <Setter Target="Shuffle.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1268,848,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Repepat.(FrameworkElement.Width)" Value="71" />
+                        <Setter Target="Repepat.(FrameworkElement.Height)" Value="71" />
+                        <Setter Target="Repepat.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>373,848,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Manualctrl.(FrameworkElement.Width)" Value="58" />
+                        <Setter Target="Manualctrl.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1594,36,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Settings.(FrameworkElement.Width)" Value="70" />
+                        <Setter Target="Settings.(FrameworkElement.Height)" Value="69" />
+                        <Setter Target="Settings.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>41,945,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Playlists.(FrameworkElement.Width)" Value="70" />
+                        <Setter Target="Playlists.(FrameworkElement.Height)" Value="69" />
+                        <Setter Target="Playlists.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>41,850,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Width)" Value="69" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Height)" Value="69" />
+                        <Setter Target="LoadMusicLibrary.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>41,937,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TrackName.(FrameworkElement.Width)" Value="926" />
+                        <Setter Target="TrackName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>413,632,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ArtistName.(FrameworkElement.Width)" Value="926" />
+                        <Setter Target="ArtistName.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>413,710,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Album_art.(FrameworkElement.HorizontalAlignment)" Value="Stretch" />
+                        <Setter Target="Album_art.(FrameworkElement.Width)" Value="NaN" />
+                        <Setter Target="Album_art.(FrameworkElement.Height)" Value="NaN" />
+                        <Setter Target="Album_art.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>621,63,777,499</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeCount.(FrameworkElement.Width)" Value="50" />
+                        <Setter Target="TimeCount.(FrameworkElement.Height)" Value="26" />
+                        <Setter Target="TimeCount.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>373,787,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="TimeLeft.(FrameworkElement.Width)" Value="51" />
+                        <Setter Target="TimeLeft.(FrameworkElement.Height)" Value="26" />
+                        <Setter Target="TimeLeft.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1214,787,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Manualctrl.(FrameworkElement.Height)" Value="56" />
+                        <Setter Target="TrackName.(FrameworkElement.Height)" Value="73" />
+                        <Setter Target="ArtistName.(FrameworkElement.Height)" Value="81" />
+                        <Setter Target="Album_art.(FrameworkElement.VerticalAlignment)" Value="Stretch" />
+                        <Setter Target="Media.(FrameworkElement.Width)" Value="2" />
+                        <Setter Target="Media.(FrameworkElement.Height)" Value="1" />
+                        <Setter Target="SongList.(FrameworkElement.Width)" Value="426" />
+                        <Setter Target="SaveFavPlaylist.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>29,848,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1920" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>-->
+
+
+
+        <!--<Image Name="background" Source="Images/Background.png" RenderTransformOrigin="0.5,0.5"
+               d:LayoutRounding="Auto" Margin="0,9,0,-9" Width="1920" Height="1080">
+            <Image.RenderTransform>
+                <CompositeTransform />
+            </Image.RenderTransform>
+        </Image>-->
+        <!-- <CaptureElement Name="PreviewControl" Stretch="Uniform" Grid.RowSpan="2" Margin="0,0,620,266" />
+       <Image Name="Glass" Source="Images/GlassTwo.png" Opacity="10" HorizontalAlignment="Left" Height="2035"
+               VerticalAlignment="Top" Width="2009" Margin="466,1191,-555,-2814" RenderTransformOrigin="0.5,0.5"
+               d:LayoutRounding="Auto" Grid.Row="1">
+            <Image.RenderTransform>
+                <CompositeTransform />
+            </Image.RenderTransform>
+        </Image>-->
+        <MediaElement Name="Media" AutoPlay="True" Margin="836,923,1083,156"/>
+
+        <Button x:Name="Bckwrd" Command="{Binding OnPrevSong}" CommandParameter="{Binding ElementName=SongList , Mode=TwoWay}" Content="button" HorizontalAlignment="Left" Height="80"
+                Margin="688,895,0,0" VerticalAlignment="Top" Width="80">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Backward.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <ToggleButton x:Name="Play" Command="{Binding OnPlayButton}" HorizontalAlignment="Left" Margin="932,895,0,0"
+                      VerticalAlignment="Top" Height="80" Width="80">
+
+            <Image Name="MyImage" Source="Images/Control/Play.png" RenderTransformOrigin="10.387,5.947" />
+
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="Checked">
+                    <core:ChangePropertyAction TargetObject="{Binding ElementName=MyImage}" PropertyName="Source"
+                                               Value="Images/Control/Pause.png" />
+
+                </core:EventTriggerBehavior>
+
+                <core:EventTriggerBehavior EventName="Unchecked">
+
+                    <core:ChangePropertyAction TargetObject="{Binding ElementName=MyImage}" PropertyName="Source"
+                                               Value="Images/Control/Play.png" />
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
+        </ToggleButton>
+
+        <Button x:Name="Forwrd" Command="{Binding OnNextSong}"  Content="button" HorizontalAlignment="Left" Height="80"
+                Margin="1187,895,0,0" VerticalAlignment="Top" Width="80" CommandParameter="{Binding ElementName=SongList , Mode=TwoWay}" >
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Forward.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="Shuffle" Command="{Binding OnShuffle}" Content="button" HorizontalAlignment="Left" Height="80"
+                Margin="1312,796,0,204" VerticalAlignment="Center" Width="80">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Shuffle.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="Repepat" Command="{Binding OnRepeat}" Content="button" HorizontalAlignment="Left" Height="80"
+                Margin="547,796,0,204" VerticalAlignment="Center" Width="80">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Repeat.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="Manualctrl" HorizontalAlignment="Left" Height="80" Margin="1616,30,0,0" VerticalAlignment="Top"
+                Width="80">
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Choose Music Genre" 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Genre_white.png" />
+                </ControlTemplate>
+            </Button.Template>
+            <ListBox x:Name="ListBox1" Height="29" Width="2" />
+            <Button.Flyout>
+                <MenuFlyout >
+                    <MenuFlyoutItem Text="Random" Name="Random"  Command="{Binding MapChosenGenre}"  CommandParameter="{Binding Text , ElementName=Random}"/>
+                    <MenuFlyoutItem Name="Rock" Text="Rock" Command="{Binding MapChosenGenre}"  CommandParameter="{Binding Text , ElementName=Rock}"/>
+                    <MenuFlyoutItem Text="Pop" Name="Pop"  Command="{Binding MapChosenGenre}"  CommandParameter="{Binding Text , ElementName=Pop}"/>
+                    <MenuFlyoutItem Text="Techno" Name="Techno"  Command="{Binding MapChosenGenre}"  CommandParameter="{Binding Text , ElementName=Techno}"/>
+                    <MenuFlyoutItem Text="Dance" Name="Dance"  Command="{Binding MapChosenGenre}"  CommandParameter="{Binding Text , ElementName=Dance}"/>
+                    <MenuFlyoutItem Text="Opera" Name="Opera"  Command="{Binding MapChosenGenre}"  CommandParameter="{Binding Text , ElementName=Opera}"/>
+                    <MenuFlyoutItem Text="Disco" Name="Disco"  Command="{Binding MapChosenGenre}"  CommandParameter="{Binding Text , ElementName=Disco}"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+
+        <Button x:Name="Processing" Content="button" HorizontalAlignment="Left" Height="80" Margin="1810,30,0,0"
+                VerticalAlignment="Top" Width="100" Command="{Binding OnCapture}" RenderTransformOrigin="6.825,0.825">
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Take Snapshot to Evaluate Your Mood" 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Mood detector_white.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button Visibility="Collapsed" x:Name="Playlists" Content="button" HorizontalAlignment="Left" Height="50" Margin="67,1082,0,-52"
+                VerticalAlignment="Top" Width="50">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Playlists_white.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="LoadMusicLibrary" Content="Load Music" Command="{Binding OnLoadMusic}"
+                CommandParameter="{Binding ElementName=Media , Mode=TwoWay}" Height="80" Margin="37,881,0,0"
+                VerticalAlignment="Top" Width="80" HorizontalAlignment="Left">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Source.png" />
+                </ControlTemplate>
+            </Button.Template>
+
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Add Music From Folder" 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+        </Button>
+
+        <Button x:Name="LoadFavPlaylist"  Command="{Binding LoadSavedPlaylist}" CommandParameter="{Binding ElementName=Media , Mode=TwoWay}"
+               Height="80" Margin="37,796,0,0"
+                VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.449,0.312" Width="80">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Load favorite Playlist.png" />
+                </ControlTemplate>
+            </Button.Template>
+
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Load Playlist From Your Favorites" 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+        </Button>
+
+        <Button x:Name="SaveFavPlaylist" Command="{Binding SavePlaylist }"
+               Height="80" Margin="37,675,0,0"
+                VerticalAlignment="Top" Width="80" HorizontalAlignment="Left">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Save favorite Playlist.png" />
+                </ControlTemplate>
+            </Button.Template>
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Save Favorite Playlist." 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+        </Button>
+
+        <Button x:Name="Favorite"  Command="{Binding LikedSong}"
+            Height="80" Margin="932,796,0,204"
+                VerticalAlignment="Center" Width="80" HorizontalAlignment="Left" RenderTransformOrigin="2.569,5.8">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Images/Control/Favorite_empty.png" />
+                </ControlTemplate>
+            </Button.Template>
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Add Current Song to Favorite Playlist" 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+        </Button>
+
+
+        <TextBlock x:Name="TrackName" TextAlignment="Center" HorizontalAlignment="Left" Margin="613,620,0,0"
+                   TextWrapping="Wrap" Text="{Binding MediaModels.SongBinder.Artist, Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}"
+                   VerticalAlignment="Top" Height="52" Width="654" FontSize="24" />
+        <TextBlock x:Name="ArtistName" TextAlignment="Center" HorizontalAlignment="Left" Margin="613,675,0,0"
+                   TextWrapping="Wrap" Text="{Binding MediaModels.SongBinder.Title, Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}"
+                   VerticalAlignment="Top" Height="58" Width="654" FontSize="24" />
+        <Image x:Name="Album_art" HorizontalAlignment="Left" Source="{Binding MediaModels.SongBinder.ArtCover}" Height="412"
+               Margin="754,202,0,466" VerticalAlignment="Center" Width="430" />
+        <ListView  x:Name="SongList" HorizontalAlignment="Left" Visibility="Visible" Height="773" Background="{Binding}"
+                  Opacity="0.5" SelectedValue="selectedFile"
+                  ItemsSource="{Binding MediaModels.ListOfMediaPlaybackItems , Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}"
+                  Margin="1616,202,0,0" VerticalAlignment="Top" Width="294">
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="SelectionChanged">
+                    <core:InvokeCommandAction Command="{Binding OnSelectedSongFromList }"
+                                              CommandParameter="{Binding ElementName=SongList, Mode=TwoWay}" />
+
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Border BorderBrush="#404040" BorderThickness="0,0,0,2" HorizontalAlignment="Stretch"
+                                Width="282" Height="80">
+                            <Grid HorizontalAlignment="Left">
+                                <TextBlock Text="{Binding MusicProperties.Artist}" TextWrapping="WrapWholeWords"
+                                           Margin="82,10,10,0" />
+                                <Grid Margin="0,0,-140,0">
+                                    <Image Source="Images/Album.png" Width="70" Height="70" Margin="0,0,350,0" />
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </Grid>
+</Page>
